@@ -1,0 +1,114 @@
+.login {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login a {
+  text-decoration: none;
+  color: blue;
+}
+
+.login a:hover {
+  text-decoration: underline;
+  color: #dfa000;
+}
+
+.login__logo {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 120px;
+  margin-inline: auto;
+}
+
+.login__container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.login__container > h1 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.login__container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.login__container > form h5 {
+  text-align: left;
+  width: 100%;
+}
+
+.login__container > form > p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.login__container > form > h5 {
+  margin-bottom: 5px;
+}
+
+.login__container > form > input {
+  border: 1px solid darkgray;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(229, 244, 255);
+  width: 95%;
+  border-radius: 5px;
+}
+
+.login__signInButton {
+  border: 1px solid black;
+  background: linear-gradient(#ffde8c, 20%, #e0a50e);
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 50px;
+  font-size: 14px;
+  color: #111;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.login__signInButton:hover {
+  background: linear-gradient(#f1d284, 20%, #d0990e);
+}
+
+.login__question {
+  font-size: 12px;
+  margin-top: 20px;
+  color: gray;
+  z-index: 50;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.login__registerButton {
+  border: 1px solid black;
+  background: linear-gradient(white, 20%, rgb(232, 232, 232));
+  cursor: pointer;
+  width: 320px;
+  padding: 7px 50px;
+  font-size: 13px;
+  color: #111;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.login__registerButton:hover {
+  background: linear-gradient(white, 20%, rgb(220, 220, 220));
+}
