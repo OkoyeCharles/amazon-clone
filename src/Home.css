@@ -8,6 +8,7 @@
 .home__row {
   padding-inline: 10px;
   display: flex;
+  overflow-x: scroll;
   z-index: 1;
   gap: 5px;
 }
@@ -15,6 +16,18 @@
 .home__image {
   width: 100%;
   z-index: -1;
-  margin-bottom: -150px;
+  margin-bottom: -230px;
   mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), 80%, rgb(0, 0, 0, 0));
+}
+
+@media screen and (max-width: 835px) {
+  .home__image {
+    margin-bottom: -180px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .home__image {
+    margin-bottom: -120px;
+  }
 }

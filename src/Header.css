@@ -11,7 +11,7 @@
 .header__logo {
   width: 100px;
   object-fit: contain;
-  margin: 0 20px;
+  margin: 0 20px 10px 15px;
   margin-top: 18px;
 }
 
@@ -24,16 +24,16 @@
 }
 
 .header__searchInput {
-  height: 14px;
+  height: 18px;
   padding: 10px;
   border: none;
   width: 100%;
 }
 
 .header__searchIcon {
-  padding: 5px;
+  padding: 7px;
   height: 22px;
-  background-color: #cd9042;
+  background-color: #febd69;
 }
 
 .header__nav {
@@ -51,7 +51,13 @@
 }
 
 .header__optionLineOne {
-  font-size: 12px;
+  font-weight: 600;
+  font-size: .7em;
+}
+
+.header__optionLineTwo {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .header__Cart {
@@ -71,4 +77,44 @@
   font-size: 18px;
   font-weight: 700;
   color: #cd9042;
+}
+
+@media screen and (max-width: 700px) {
+  .header__logo {
+    width: 70px;
+    margin: 10% 10px 10px 15px;
+  }
+
+  .header__searchInput {
+    height: 12px;
+    padding: 10px;
+  }
+  
+  .header__searchIcon {
+    padding: 4px;
+    height: 22px;
+    background-color: #febd69;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__logo {
+    width: 60px;
+    margin: 10% 10px 10px 15px;
+  }
+
+  .header__option {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .header__optionLineOne {
+    font-weight: 500;
+    font-size: .6em;
+  }
+  
+  .header__optionLineTwo {
+    font-size: .8em;
+    font-weight: 500;
+  }
 }

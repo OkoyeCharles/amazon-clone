@@ -37,3 +37,16 @@
 .subtotal > button:active {
   background-color: #ffb700;
 }
+
+@media screen and (max-width: 768px) {
+  .subtotal {
+    margin-inline: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .subtotal {
+    width: 90%;
+  }
+}
