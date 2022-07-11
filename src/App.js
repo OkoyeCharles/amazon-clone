@@ -7,6 +7,7 @@ import Checkout from './Checkout';
 import Login from './Login';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
+import Payment from './Payment';
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -15,7 +16,6 @@ function App() {
     // Runs Once When App Loads
 
     auth.onAuthStateChanged(authUser => {
-      console.log('THE USER IS >>>> ', authUser)
       if (authUser) {
         // The user just / has logged in
 
@@ -51,6 +51,9 @@ function App() {
 
           {/* Login Component */}
           <Route path="/login" element = {<Login/>}/>
+
+          {/* Payment Component */}
+          <Route path="/payment" element = {<Fragment><Header/><Payment/></Fragment>}/>
           
         </Routes>     
       </div>
